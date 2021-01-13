@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "Oxygene";
+    src: url("Font/Oxygen-Regular.ttf");
+}
+
+body {
+    font-family: Oxygene;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Photo d'identité en cercle */
+img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Nom Prénom en haut */
+h2 {
+    position: sticky;
+    top: 3rem;
+    background-color: teal;
+    font-size:2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Titres de pavé de présentation */
+h3 {
+    position: absolute;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: teal;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Titres Exp et compétences pro */
+h4 {
+    padding: 1rem;
+    background-color: white;
+    border: solid;
+    border-color: #152424;
+    color:black;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Sous-titres Info et Admin et comptables */
+h5 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    background-color: rgb(62, 124, 124);
+    color:white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer {
+    margin-bottom: 3rem;
+}
+
+.navbar {
+    background-color:teal;
+    box-sizing: border-box;
+}
+
+/* Bloc vert, page index et présentation */
+.contenu{
+    position: absolute;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: teal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/* Nom Prénom page index */
+.titre h1 {
+    position: relative;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+/* Alignement et centrage photo */
+.image {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+    }
+
+/* Texte adresse page index */
+.elements {
+    position: relative; 
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* Lien Pdf page index */
+.pdf {
+    padding:1rem;
+    text-align: center;
+    font-style: italic;
+    background-color: white;
+    color: teal;
+}
+
+/* Mise en forme titre pavé dans présentation*/
+.lignetitre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.barre {
+        width: 100%;
+        height: 2px;
+        background: white;
+        margin: 1rem;
+}
+
+/* Texte de ma recherche*/
+.texte1 {
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Texte aligné à gauche*/
+.texte2 {
+    margin: 1rem;
+}
+
+/* Texte avec un léger retrait à droite (sous-texte)*/
+.texte3 {
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+/* Cadre blanc, parcours*/
+.cadreblanc {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/* Dates expériences*/
+.texte4 {
+    margin-left: 2rem;      /*mettre 8rem quand flèche*/
+    color: black;
+    font-weight: bolder;
+}
+
+/* Descriptif expériences*/
+.texte5 {
+    margin-left: 2rem;      /*mettre 8rem quand flèche*/
+    padding-right: 2rem;
+    color: black;
+}
+
+/* Descriptif liste des compétences*/
+.competences {
+    padding: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    background-color: rgb(190, 212, 212);
+    color:rgb(66, 64, 64);
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+/* Descriptif lieux d'acquisition compétences cpta*/
+.texte6 {
+    background-color: rgb(158, 190, 190);
+    color:rgb(66, 64, 64);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Contact*/
+.texte7 {
+    background-color: #D7F26A;
+    color:black;
+    text-align: center;
+    line-height: 2rem;
+   
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* Ajustement taille image/Ipad*/
+    img {
+        border-radius: 50%;
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    /* Ajustement taille menu/Ipad*/
+    .navbar-expand-md .navbar-collapse {
+        display: flex;
+        justify-content: space-around;
+        font-size: 200%;
+    }
+
+    /* Ajustement taille police/Ipad*/
+    .titre h1 {
+        font-size: 200%;
+    }
+      
+    /* Ajustement taille image/Ipad*/
+    .image {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    
+    /* Ajustement taille police/Ipad*/
+    .elements {
+        text-align: center;
+        font-size: 200%;
+        margin: 1rem;
+    }
+       
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Ajustement taille image>Ipad*/
+    img {
+        border-radius: 50%;
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    /* Ajustement taille police>Ipad*/
+    h2 {
+        font-size: 400%;
+    }
+
+    /* Ajustement taille police>Ipad*/
+    h3 {
+        font-size: 300%;
+    }
+
+    /* Ajustement taille menu>Ipad*/
+    .navbar-expand-md .navbar-collapse {
+        display: flex;
+        justify-content: space-around;
+        font-size: 100%;
+    }
+
+    /* Ajustement taille police>Ipad*/
+    .titre h1 {
+        font-size: 400%;
+    }
+    
+    /* Ajustement taille image>Ipad*/
+    .image {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    
+    /* Ajustement taille police>Ipad*/
+    .elements {
+        text-align: center;
+        font-size: 200%;
+        margin: 1rem;
+        color: white;
+    }
+ 
+    /* Ajustement taille police>Ipad*/
+    .texte1 {
+        font-size: 200%;
+        margin: 3rem;
+    }
+
+    /* Ajustement taille police>Ipad*/
+    .texte2{
+        font-size: 200%;
+        margin: 3rem;
+    }
+
+    /* Ajustement taille police>Ipad*/
+    .texte3{
+        font-size: 200%;
+        margin: 3rem;
+        margin-left: 9rem;
+    }
+
+    /* Ajustement espacement pavés présentation>Ipad*/
+    .lignetitre {
+        margin-top: 5rem;
+    }
+
+    
+}
+    
